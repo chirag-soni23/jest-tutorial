@@ -1,4 +1,3 @@
-const fetchData = require("./sum")
 
 1. // Basic concept jest
 // const sum = require('./sum')
@@ -45,6 +44,7 @@ const fetchData = require("./sum")
 
 
 7. // Asynchronous Code 
+const fetchData = require("./sum")
 test('the data is Peanut butter', done => {
     function callback(data) {
         try {
@@ -57,5 +57,5 @@ test('the data is Peanut butter', done => {
         }
     }
     fetchData(callback)
-})
+}) 
 
