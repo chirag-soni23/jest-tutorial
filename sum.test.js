@@ -1,6 +1,6 @@
 
 1. // Basic concept jest
-// const sum = require('./sum')
+const sum = require('./sum')
 // test('sum function',()=>{
 //     expect(sum(1,2)).toBe(3)
 // })
@@ -35,7 +35,7 @@
 
 
 6. // Matchers (toThrow)
-// const myFunction = require('./sum')
+const myFunction = require('./sum')
 // test('throws on invalid input',()=>{
 //     expect(()=>{
 //         myFunction('Not a number');
@@ -45,17 +45,17 @@
 
 7. // Asynchronous Code 
 const fetchData = require("./sum")
-test('the data is Peanut butter', done => {
-    function callback(data) {
-        try {
-            expect(data).toBe('Peanut butter')
-            done()
+//  test('the data is Peanut butter', done => {
+//     function callback(data) {
+//         try {
+//             expect(data).toBe('Peanut butter')
+//             done()
 
-        } catch (error) {
-            done(error)
+//         } catch (error) {
+//             done(error)
 
-        }
-    }
-    fetchData(callback)
-}) 
+//         }
+//     }
+//     fetchData(callback)
+// }) 
 
