@@ -18,6 +18,7 @@
 //     expect(data).toEqual({ one: 1, two: 2 })
 // })
 
+
 4. // Matchers  (toBeFalsy)
 // test('zero is falsy',()=>{
 //     const n = 0;
@@ -26,7 +27,16 @@
 
 
 5. // Matchers  (toBeTruthy)
-test('one is falsy',()=>{
-    const n = 1;
-   expect(n).toBeTruthy()
+// test('one is falsy',()=>{
+//     const n = 1;
+//    expect(n).toBeTruthy()
+// })
+
+
+6. // Matchers (toThrow)
+const myFunction = require('./sum')
+test('throws on invalid input',()=>{
+    expect(()=>{
+        myFunction('Not a number');
+    }).toThrow()
 })
