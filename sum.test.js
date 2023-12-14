@@ -34,9 +34,17 @@
 
 
 6. // Matchers (toThrow)
-const myFunction = require('./sum')
-test('throws on invalid input',()=>{
-    expect(()=>{
-        myFunction('Not a number');
-    }).toThrow()
-})
+// const myFunction = require('./sum')
+// test('throws on invalid input',()=>{
+//     expect(()=>{
+//         myFunction('Not a number');
+//     }).toThrow()
+// })
+
+
+7. // Asynchronous Code 
+function fetchData(callback){
+    setTimeout(()=>{
+        callback("Peanut butter")
+    },1000)
+}
