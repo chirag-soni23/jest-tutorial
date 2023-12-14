@@ -24,10 +24,23 @@ module.exports = fetchData
 
 4. // Promise Asynchronous Code
 function fetchPromise(){
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve,reject)=>
         setTimeout(()=>{
             resolve("peanut butter")
         },1000)
-    })
+    )
 }
 module.exports = fetchPromise
+
+5.// Async Await Asynchronous code 
+function fetchAsync() {
+    return new Promise((resolve, reject) =>
+        setTimeout(() => {
+            resolve("peanut Jam");
+        }, 1000)
+    );
+}
+
+module.exports = fetchAsync;
+
+

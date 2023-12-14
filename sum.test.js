@@ -61,11 +61,32 @@ const fetchData = require("./sum")
 
 
 8. // Promise Asynchronous Code
-const fetchPromise = require("./sum")
-test("the data is peanut butter",()=>{
-    return expect(fetchPromise()).resolves.toBe('peanut butter')
+// const fetchPromise = require("./sum")
+// test("the data is peanut butter",()=>{
+//     return expect(fetchPromise()).resolves.toBe('peanut butter')
+// })
+// test('the fetch fails with an error',()=>{
+//     return expect(fetchPromise()).rejects.toThrow('error')
+// })
+
+
+9. // Async Await Asynchronous Code
+// const fetchAsync = require('./sum')
+// test("the data is peanut jam",async()=>{
+//     const data  = await fetchAsync();
+//     expect(data).toBe('peanut Jam')
+// })
+
+
+10. // Mock Functions and spies
+// => Basic way
+// const mockCallback =  jest.fn(x =>  42 + x)
+// mockCallback(0)
+// mockCallback(1)
+
+// => Test Mode
+test("mock implementation of a basic function",()=>{
+
 })
-test('the fetch fails with an error',()=>{
-    return expect(fetchPromise()).rejects.toThrow('error')
-})
+
 
