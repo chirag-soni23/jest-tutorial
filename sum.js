@@ -20,3 +20,14 @@ function fetchData(callback){
     },1000)
 }
 module.exports = fetchData
+
+
+4. // Promise Asynchronous Code
+function fetchPromise(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("peanut butter")
+        },1000)
+    })
+}
+module.exports = fetchPromise
