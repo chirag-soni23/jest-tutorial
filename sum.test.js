@@ -1,3 +1,5 @@
+const fetchData = require("./sum")
+
 1. // Basic concept jest
 // const sum = require('./sum')
 // test('sum function',()=>{
@@ -43,4 +45,17 @@
 
 
 7. // Asynchronous Code 
+test('the data is Peanut butter', done => {
+    function callback(data) {
+        try {
+            expect(data).toBe('Peanut butter')
+            done()
+
+        } catch (error) {
+            done(error)
+
+        }
+    }
+    fetchData(callback)
+})
 
