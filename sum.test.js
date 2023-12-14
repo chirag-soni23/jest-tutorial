@@ -43,8 +43,4 @@
 
 
 7. // Asynchronous Code 
-function fetchData(callback){
-    setTimeout(()=>{
-        callback("Peanut butter")
-    },1000)
-}
+
