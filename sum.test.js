@@ -18,8 +18,15 @@
 //     expect(data).toEqual({ one: 1, two: 2 })
 // })
 
-4. // Matchers  (toBefalsy)
-test('null is falsy',()=>{
-    const n = 0
-    expect(n).toBeFalsy()
+4. // Matchers  (toBeFalsy)
+// test('zero is falsy',()=>{
+//     const n = 0;
+//    expect(n).toBeFalsy()
+// })
+
+
+5. // Matchers  (toBeTruthy)
+test('one is falsy',()=>{
+    const n = 1;
+   expect(n).toBeTruthy()
 })
